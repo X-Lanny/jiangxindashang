@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'FZLTHK';
+    src: url('./font/SoinSansPro-LightOblique.ttf') format('truetype'); 
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'FZLTHK';
+    /* font-family: "MicrosoftYaHei", -apple-system ; */
+    font-size: 16px;
+    color: #000000;
+    font-weight: normal;
+    height: 100%;
+    width: 100%;
+}
+.page-header{
+    max-height: 546px;
+    overflow: hidden;
+}
+.header-logo-container{
+    height: 60px;
+}
+.header-logo{
+    margin-top: 20px;
+    margin-left: 460px;
+}
+.header-img-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .header-img-bg{
+        height: 668px;
+        width: 100%;
+    }
+    .header-img-jiangxin{
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 365px);
+    }
+}
+
+@media screen and (max-width: 1980px) {
+    .header-logo{
+        margin-left: 200px;
+    } 
+}
+@media screen and (max-width: 1400px) {
+    .header-logo{
+        margin-left: 100px;
+    } 
+}
+.page-mainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+}
+.activity-section{
+    position: relative;
+    width: 1000px;
+    border: 6px solid #E2E2E2;
+    border-bottom: 2px dashed #E2E2E2;
+    background-color: #FFF;
+    .title-img{
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+    .activity-title{
+        margin-top: 98px;
+        text-align: center;
+        font-size: 30px;
+        font-family: FZLTHJW;
+        line-height: 35px;
+    }
+    .activity-desc{
+        margin: 31px 104px 83px;
+        text-align: center;
+        line-height: 26px;
+    }
+}
+.teacher-section{
+    position: relative;
+    width: 1000px;
+    border: 6px solid #E2E2E2;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #F7F7F7;
+    .teacher-desc-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-img{
+        position: absolute;
+        top: 24px;
+        left: 20px;
+    }
+    .teacher-desc{
+        margin-left: 96px;
+        margin-top: 72px;
+    }
+    .teacher-career-img{
+        margin-right: 59px;
+        margin-top: 32px;
+    }
+    .teacher-bottom{
+        margin-left: 775px;
+        margin-bottom: 22px;
+        width: 182px;
+        height: 31px;
+        font-family: FZLTHJW;
+        font-weight: normal;
+        font-size: 14px;
+        color: #666666;
+    }
+}
+.teacher-title-container{
+    margin-left: 29px;
+    display: flex;
+    align-items: flex-end;
+    .teacher-title-box{
+        margin-left: 29px;
+    }
+    .teacher-title{
+        font-family: FZLTHJW;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .teacher-subtitle{
+        font-size: 16px;
+        color: #333333;
+        line-height: 26px;
+    }
+}
+.teacher-list-container{
+    margin-left: 27px;
+    margin: 20px 27px 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .teacher-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        position: relative;
+        width: 290px;
+        height: 212px;
+        border: 1px solid #E6E6E6;;
+    }
+    .teacher-item-decor{
+        position: absolute;
+    }
+    .teacher-item-decor.left{
+        left: 0;
+    }
+    .teacher-item-decor.right{
+        right: 0;
+        transform: rotateZ(270deg);
+    }
+    .teacher-item-img{
+        margin-top: 13px;
+        margin-bottom: 21px;
+    }
+    .teacher-item-desc{
+        margin: 0px 11px 17px;
+    }
+}
+.teacher-list-container.last{
+    margin: 20px 27px 21px;
+}
+.section-line{
+    display: inline-flex;
+    justify-content: center;
+    width: 1000px;
+    border: 6px solid #E2E2E2;
+    border-top: 0;
+    border-bottom: 0;
+}
+.message-section{
+    position: relative;
+    background-color: #fff;
+    width: 1000px;
+    border: 6px solid #E2E2E2;
+    border-top: 0;
+    border-bottom: 0;
+    .title-img{
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+    .message-title{
+        margin-top: 41px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 30px;
+        color: #000000;
+        line-height: 35px;
+    }
+    .message-content-container{
+        display: flex;
+        align-items: center;
+        margin-left: 102px;
+        margin-right: 36px;
+    }
+    .message-content{
+        margin-right: 37px;
+    }
+    .message-info{
+        font-size: 14px;
+        line-height: 26px;
+        text-decoration-line: underline;
+    }
+    .message-time ,.message-rule{
+        display: flex;
+        font-size: 12px;
+        
+    }
+    .message-time{
+        line-height: 26px;
+    }
+    .message-rule-title, .message-rule-title{
+        width: 60px;
+        margin-right: 10px; 
+    }
+    .message-rule-desc{
+        width: 270px;
+    }
+    .message-coupon{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .message-input-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 26px;
+        margin-bottom: 60px;
+        .message-input-container{
+            position: relative;
+            width: 650px;
+            height: 86px;
+            border: 1px solid #DBDBDB;
+            .message-decor {
+                position: absolute;
+            }
+            .message-decor.left{
+                left: 0;
+            }
+            .message-decor.right{
+                right: 0;
+                transform: rotateZ(270deg);
+            }
+        }
+        
+        .message-input{
+            width: 100%;
+            height: 100%;
+            padding: 11px;
+            resize: none;
+            border: none;
+            font-size: 14px;        
+            line-height: 26px;
+        }
+        .message-input::placeholder{
+            color: #000000;
+        }
+        .message-btn{
+            font-size: 16px;
+            color: #666666;
+            line-height: 22px;
+            width: 150px;
+            height: 86px;
+            padding: 20px 40px;
+            background: linear-gradient(#EBEBEB, #FAFAFA);
+            border: 1px solid #DBDBDB;
+            border-left: none;
+        }
+    }
+    .message-board{
+        position: relative;
+        height: 520px;
+        margin: 0 20px;
+        .message-board-bg{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .message-item{
+            position: absolute;
+            padding : 20px 17px;
+            width: 320px;
+            height: 158px;
+            background-color:#D7DBEB;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            /* overflow: hidden; */
+            word-break: break-word;
+            text-overflow: ellipsis; 
+            line-height: 26px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            cursor: pointer;
+        }
+        .message-delete{
+            position: absolute;
+            top: -26px;
+            right: 0;
+            display: none;
+        }
+        .message-item:hover .message-delete{
+            display: block;
+        }
+        .message-sticker-container{
+            /* position: relative; */
+            .message-sticker{
+                position: absolute;
+                top: -10px;
+            }
+            .message-sticker.left{
+                left: -20px;
+            }
+            .message-sticker.right{
+                right: -20px;
+            }
+        }
+    }
+}
+.page-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 26px;
+    background: #F7F7F7;
+    .footer-title{
+        margin-top: 50px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .footer-subtitle{
+        margin-bottom: 47px;
+        font-size: 12px; 
+    }
+}
